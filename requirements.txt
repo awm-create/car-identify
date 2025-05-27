@@ -3,7 +3,6 @@ altgraph==0.17.4
 amqp==5.3.1
 astunparse==1.6.3
 async-timeout==5.0.1
-backports.zoneinfo==0.2.1
 bcrypt==4.3.0
 bidict==0.23.1
 billiard==4.2.1
@@ -40,7 +39,6 @@ google-pasta==0.2.0
 greenlet==3.1.1
 grpcio==1.70.0
 h11==0.16.0
-h5py==3.6.0
 hyperlpr==0.0.2
 idna==3.10
 imageio==2.35.1
