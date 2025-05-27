@@ -91,8 +91,6 @@ python-dateutil==2.9.0.post0
 python-engineio==4.12.1
 python-socketio==5.8.0
 pytz==2025.2
-pywin32==310
-pywin32-ctypes==0.2.3
 PyYAML==6.0.2
 redis==4.5.5
 requests==2.32.3
