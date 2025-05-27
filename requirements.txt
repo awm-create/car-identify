@@ -116,8 +116,8 @@ threadpoolctl==3.5.0
 tifffile==2023.7.10
 tomli==2.2.1
 torch
-torchaudio==2.4.1+cu118
-torchvision==0.19.1+cu118
+torchaudio
+torchvision
 tqdm==4.67.1
 typing_extensions==4.13.2
 tzdata==2025.2
