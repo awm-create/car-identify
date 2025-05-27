@@ -21,4 +21,9 @@ if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):
         os.makedirs(app.config['UPLOAD_FOLDER'])
 
-    app.run(debug=True)
+    # 绑定到 0.0.0.0，并使用环境变量 PORT（Render 默认 PORT=10000）
+    app.run(
+        host='0.0.0.0',
+        port=int(os.environ.get("PORT", 10000)),  # 本地开发默认用 5000
+        debug=False  # 生产环境务必关闭 debug 模式！
+    )
