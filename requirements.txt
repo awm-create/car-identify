@@ -119,7 +119,6 @@ torch
 torchaudio
 torchvision
 tqdm==4.67.1
-typing_extensions
 tzdata==2025.2
 urllib3==2.2.3
 vine==5.1.0
