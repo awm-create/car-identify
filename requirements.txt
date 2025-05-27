@@ -40,8 +40,7 @@ google-pasta==0.2.0
 greenlet==3.1.1
 grpcio==1.70.0
 h11==0.16.0
-h5py==3.8.0 --only-binary=h5py  # 强制使用预编译的二进制
-# backports.zoneinfo==0.2.1; python_version < "3.9"  # 仅旧版 Python 需要
+h5py==3.6.0 
 hyperlpr==0.0.2
 idna==3.10
 imageio==2.35.1
