@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>车牌识别结果</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { width: 80%; margin: auto; }
+        .image-section { text-align: center; margin-bottom: 20px; }
+        .image-section img { width: 80%; max-width: 600px; }
+        .result { margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: center; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>车牌识别结果</h1>
+        <div class="image-section">
+            <img src="{{ url_for('static', filename=image_path.split('uploads/')[1]) }}" alt="上传图片">
+        </div>
+        <div class="result">
+            <table>
+                <thead>
+                    <tr>
+                        <th>车牌号</th>
+                        <th>识别时间</th>
+                        <th>车牌颜色</th>
+                        <th>车牌信息</th>
+                        <th>车牌类型</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for result in results %}
+                    <tr>
+                        <td>{{ result.plate }}</td>
+                        <td>{{ result.current_time }}</td>
+                        <td>{{ result.color }}</td>
+                        <td>{{ result.province_info }}</td>
+                        <td>{{ result.plate_type }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
